@@ -25,7 +25,7 @@ class App extends React.Component {
       clientToken: clientToken,
       googlePay: false,
       applePay: false,
-      vaultManager: true,
+      vaultManager: false,
       darkTheme: true,
     })
       .then(result => alert(JSON.stringify(result)))
