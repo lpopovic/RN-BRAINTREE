@@ -23,12 +23,6 @@ class App extends React.Component {
   onPressPayment = () => {
     BraintreeDropIn.show({
       clientToken: clientToken,
-      merchantIdentifier: 'applePayMerchantIdentifier',
-      googlePayMerchantId: 'googlePayMerchantId',
-      countryCode: 'US',    //apple pay setting
-      currencyCode: 'USD',   //apple pay setting
-      merchantName: 'Your Merchant Name for Apple Pay',
-      orderTotal: 'Total Price',
       googlePay: false,
       applePay: false,
       vaultManager: true,
@@ -48,6 +42,7 @@ class App extends React.Component {
     return (
       <>
         <StatusBar barStyle="dark-content" />
+        <Text style={{ fontSize: 30 }}>Braintree Payment</Text>
         <SafeAreaView style={{
           flex: 1,
           justifyContent: 'center',
